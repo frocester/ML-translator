@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+transformers
+nest-asyncio
+tensorflow
+pydantic
