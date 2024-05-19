@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from transformers import AutoTokenizer, TFAutoModelForSeq2SeqLM
-import nest_asyncio
+# import nest_asyncio
 from uvicorn import run
 
 app = FastAPI()
@@ -33,5 +33,5 @@ async def translate_text(request: TranslationRequest):
     return {"translated_text": translated_text}
 
 
-nest_asyncio.apply()
-run(app, host="0.0.0.0", port=8000)
+# nest_asyncio.apply()
+# run(app, host="0.0.0.0")
