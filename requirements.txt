@@ -4,3 +4,4 @@ transformers
 nest-asyncio
 tensorflow
 pydantic
+sentencepiece 
